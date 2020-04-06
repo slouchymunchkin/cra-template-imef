@@ -1,0 +1,28 @@
+{
+  "name": "cra-template-imef",
+  "version": "1.0.3",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template"
+  ],
+  "description": "My personal template.",
+  "main": "template.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slouchymunchkin/cra-template-imef",
+    "directory": "packages/cra-template"
+  },
+  "author": "slouchy",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/slouchymunchkin/cra-template-imef/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
