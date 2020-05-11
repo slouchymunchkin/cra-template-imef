@@ -16,7 +16,9 @@
       "**/package-lock.json": true,
       "**/setupTests.ts": true,
       "**/serviceWorker.ts": true,
-      "**/react-app-env.d.ts": true
+      "**/react-app-env.d.ts": true,
+      "**/obj": true,
+      "**/bin": true
     },
     "search.exclude": {
       "**/node_modules": true

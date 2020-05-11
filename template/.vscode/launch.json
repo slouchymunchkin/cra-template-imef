@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Chrome",
+      "name": "Frontend Chrome",
       "type": "chrome",
       "request": "launch",
       "preLaunchTask": "start-debug",
@@ -18,7 +18,7 @@
       "runtimeArgs": ["--disable-infobars --disable-session-crashed-bubble --disable-translate --disable-background-mode"]
     },
     {
-      "name": "Firefox (fungerar ej just nu)",
+      "name": "Firefox (does not work currently)",
       "type": "firefox",
       "request": "launch",
       "preLaunchTask": "start-debug",
@@ -31,8 +31,8 @@
   ],
   "compounds": [
     {
-      "name": "Chrome frontend & backend",
-      "configurations": ["Chrome", ".NET Core Launch (web)"]
+      "name": "Frontend Chrome & Backend",
+      "configurations": ["Frontend Chrome", "Backend"]
     }
   ]
 }
