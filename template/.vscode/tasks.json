@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "start-debug",
+      "label": "frontend-debug",
       "type": "npm",
       "script": "start:debug",
       "group": {
@@ -34,31 +34,33 @@
       "command": ["${command:workbench.action.terminal.kill}"]
     },
     {
-      "label": "terminal-all",
-      "dependsOn": ["terminal-npm", "terminal-dotnet"],
+      "label": "frontend-backend-terminal",
+      "dependsOn": ["frontend-terminal", "backend-terminal"],
       "group": {
         "kind": "build",
         "isDefault": true
       }
     },
     {
-      "label": "terminal-npm",
+      "label": "frontend-terminal",
       "type": "npm",
       "script": "start",
       "presentation": {
         "reveal": "always",
         "group": "build"
-      }
+      },
+      "problemMatcher": []
     },
     {
-      "label": "terminal-dotnet",
+      "label": "backend-terminal",
       "command": "dotnet",
       "type": "shell",
       "args": ["run", "--project", "../Backend"],
       "presentation": {
         "reveal": "always",
         "group": "build"
-      }
+      },
+      "problemMatcher": "$msCompile"
     }
   ]
 }

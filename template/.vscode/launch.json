@@ -2,10 +2,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Frontend Chrome",
-      "type": "chrome",
+      "name": "Chrome",
+      "type": "pwa-chrome",
       "request": "launch",
-      "preLaunchTask": "start-debug",
+      "preLaunchTask": "frontend-debug",
       "postDebugTask": "kill-debug-process",
       "sourceMaps": true,
       "url": "http://localhost:3000",
@@ -18,10 +18,10 @@
       "runtimeArgs": ["--disable-infobars --disable-session-crashed-bubble --disable-translate --disable-background-mode"]
     },
     {
-      "name": "Firefox (does not work currently)",
+      "name": "Firefox",
       "type": "firefox",
       "request": "launch",
-      "preLaunchTask": "start-debug",
+      "preLaunchTask": "frontend-debug",
       "postDebugTask": "kill-debug-process",
       "reAttach": false,
       "profile": "dev-edition-default",
@@ -31,8 +31,12 @@
   ],
   "compounds": [
     {
-      "name": "Frontend Chrome & Backend",
-      "configurations": ["Frontend Chrome", "Backend"]
+      "name": "Chrome & Backend",
+      "configurations": ["Chrome", "Backend"]
+    },
+    {
+      "name": "Firefox & Backend",
+      "configurations": ["Firefox", "Backend"]
     }
   ]
 }

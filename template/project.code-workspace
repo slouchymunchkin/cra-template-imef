@@ -44,17 +44,19 @@
     "breadcrumbs.enabled": true,
     "explorer.autoReveal": false,
     "scm.defaultViewMode": "tree",
+    "debug.javascript.usePreview": true,
     "vsintellicode.java.completionsEnabled": false,
     "vsintellicode.python.completionsEnabled": false,
     "todo-tree.general.rootFolder": "${workspaceFolder}/src",
     "vsicons.dontShowNewVersionMessage": true,
     "css_peek.peekToExclude": ["**/node_modules", "**/bower_components", "**/dist"],
     "html-css-class-completion.excludeGlobPattern": "**/node_modules",
-    "html-css-class-completion.includeGlobPattern": "src/**/*.{css,html}"
+    "html-css-class-completion.includeGlobPattern": "src/**/*.{css,html}",
+    "gitlens.views.repositories.files.layout": "tree",
+    "gitlens.advanced.telemetry.enabled": false
   },
   "extensions": {
     "recommendations": [
-      "msjsdiag.debugger-for-chrome",
       "esbenp.prettier-vscode",
       "stylelint.vscode-stylelint",
       "coenraads.bracket-pair-colorizer-2",

@@ -1,5 +1,4 @@
-Write-Host ""
-Write-Host "Checking if folder ""node_modules"" exists" -ForegroundColor Yellow
+Write-Host "`nChecking if folder ""node_modules"" exists" -ForegroundColor Yellow
 if ( -not (Test-Path -Path 'node_modules' -PathType Container) ) { 
    Write-Host "Node_modules folder is missing" -ForegroundColor Red -NoNewline 
    Write-Host " => Running"  -ForegroundColor White -NoNewline 
