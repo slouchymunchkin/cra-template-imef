@@ -23,6 +23,7 @@
       "prestart": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./check-npm.ps1",
       "eslint": "eslint \"src/**/*.ts{,x}\"",
       "eslint:fix": "eslint --fix \"src/**/*.ts{,x}\"",
+      "eslint:fix:imports": "eslint --fix \"src/**/*.ts{,x}\" --rule \"unused-imports/no-unused-imports-ts: 1\"",
       "prettier": "prettier --check \"src/**/*.ts{,x}\"",
       "prettier:fix": "prettier --write \"src/**/*.ts{,x}\"",
       "stylelint": "stylelint \"src/**/*.css\"",
