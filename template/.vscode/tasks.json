@@ -34,15 +34,15 @@
       "command": ["${command:workbench.action.terminal.kill}"]
     },
     {
-      "label": "frontend-backend-terminal",
-      "dependsOn": ["frontend-terminal", "backend-terminal"],
+      "label": "frontend-backend",
+      "dependsOn": ["frontend", "backend"],
       "group": {
         "kind": "build",
         "isDefault": true
       }
     },
     {
-      "label": "frontend-terminal",
+      "label": "frontend",
       "type": "npm",
       "script": "start",
       "presentation": {
@@ -52,7 +52,7 @@
       "problemMatcher": []
     },
     {
-      "label": "backend-terminal",
+      "label": "backend",
       "command": "dotnet",
       "type": "shell",
       "args": ["run", "--project", "../Backend"],
