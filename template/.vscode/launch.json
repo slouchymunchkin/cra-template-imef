@@ -18,6 +18,22 @@
       "runtimeArgs": ["--disable-infobars --disable-session-crashed-bubble --disable-translate --disable-background-mode"]
     },
     {
+      "name": "Edge",
+      "type": "pwa-msedge",
+      "request": "launch",
+      "preLaunchTask": "frontend-debug",
+      "postDebugTask": "kill-debug-process",
+      "sourceMaps": true,
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/src",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      },
+      "skipFiles": ["node_modules", "VM**"],
+      "userDataDir": false,
+      "runtimeArgs": ["--disable-infobars --disable-session-crashed-bubble --disable-translate --disable-background-mode"]
+    },
+    {
       "name": "Firefox",
       "type": "firefox",
       "request": "launch",
@@ -33,6 +49,10 @@
     {
       "name": "Chrome & Backend",
       "configurations": ["Chrome", "Backend"]
+    },
+    {
+      "name": "Edge & Backend",
+      "configurations": ["Edge", "Backend"]
     },
     {
       "name": "Firefox & Backend",
