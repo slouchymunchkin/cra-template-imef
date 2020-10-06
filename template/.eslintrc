@@ -53,7 +53,7 @@
     "@typescript-eslint/no-unused-vars": "off", // Turned off in favor of using "eslint-plugin-unused-imports"
     "no-unused-vars": "off",
     "unused-imports/no-unused-imports-ts": "off", // (Fixable) Disallow unused imports
-    "unused-imports/no-unused-vars-ts": "warn", // Disallow unused variables
+    "unused-imports/no-unused-vars-ts": ["warn", { "argsIgnorePattern": "^_" }], // Disallow unused variables
     "import/order": "off",
     "import/first": "warn", // (Fixable)
     "import/newline-after-import": "warn", // (Fixable)
