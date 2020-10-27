@@ -15,8 +15,7 @@
       "**/dist": true,
       "**/package-lock.json": true,
       "**/setupTests.ts": true,
-      "**/serviceWorker.ts": true,
-      "**/react-app-env.d.ts": true,
+      "**/react-app-env.d.ts": false,
       "**/obj": true,
       "**/bin": true
     },
